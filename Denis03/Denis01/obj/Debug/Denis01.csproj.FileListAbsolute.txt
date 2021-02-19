@@ -1,0 +1,13 @@
+C:\Users\dead1\Documents\proyectos\Denis01\Denis01\bin\Debug\Denis01.exe.config
+C:\Users\dead1\Documents\proyectos\Denis01\Denis01\bin\Debug\Denis01.exe
+C:\Users\dead1\Documents\proyectos\Denis01\Denis01\bin\Debug\Denis01.pdb
+C:\Users\dead1\Documents\proyectos\Denis01\Denis01\obj\Debug\Denis01.csprojAssemblyReference.cache
+C:\Users\dead1\Documents\proyectos\Denis01\Denis01\obj\Debug\Denis01.Form1.resources
+C:\Users\dead1\Documents\proyectos\Denis01\Denis01\obj\Debug\Denis01.Properties.Resources.resources
+C:\Users\dead1\Documents\proyectos\Denis01\Denis01\obj\Debug\Denis01.csproj.GenerateResource.cache
+C:\Users\dead1\Documents\proyectos\Denis01\Denis01\obj\Debug\Denis01.csproj.CoreCompileInputs.cache
+C:\Users\dead1\Documents\proyectos\Denis01\Denis01\obj\Debug\Denis01.exe
+C:\Users\dead1\Documents\proyectos\Denis01\Denis01\obj\Debug\Denis01.pdb
+C:\Users\dead1\Documents\proyectos\Denis01\Denis01\obj\Debug\Denis01.Vista.FrmMenu.resources
+C:\Users\dead1\Documents\proyectos\Denis01\Denis01\obj\Debug\Denis01.Vista.FrmAcercaDe.resources
+C:\Users\dead1\Documents\proyectos\Denis01\Denis01\obj\Debug\Denis01.Vista.FrmListaDeUsuarios.resources
