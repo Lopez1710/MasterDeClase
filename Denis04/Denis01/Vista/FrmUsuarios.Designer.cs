@@ -41,7 +41,7 @@ namespace Denis01.Vista
             this.TxtApellido = new System.Windows.Forms.TextBox();
             this.TxtEdad = new System.Windows.Forms.TextBox();
             this.TxtPass = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtbUpdate = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,7 +53,7 @@ namespace Denis01.Vista
             // 
             // BtnAgregar
             // 
-            this.BtnAgregar.Location = new System.Drawing.Point(12, 504);
+            this.BtnAgregar.Location = new System.Drawing.Point(62, 504);
             this.BtnAgregar.Name = "BtnAgregar";
             this.BtnAgregar.Size = new System.Drawing.Size(127, 41);
             this.BtnAgregar.TabIndex = 0;
@@ -63,7 +63,7 @@ namespace Denis01.Vista
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(145, 504);
+            this.button2.Location = new System.Drawing.Point(226, 504);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 41);
             this.button2.TabIndex = 1;
@@ -151,15 +151,15 @@ namespace Denis01.Vista
             this.TxtPass.Size = new System.Drawing.Size(229, 20);
             this.TxtPass.TabIndex = 11;
             // 
-            // button1
+            // BtbUpdate
             // 
-            this.button1.Location = new System.Drawing.Point(281, 504);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 41);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.BtbUpdate.Location = new System.Drawing.Point(394, 504);
+            this.BtbUpdate.Name = "BtbUpdate";
+            this.BtbUpdate.Size = new System.Drawing.Size(95, 41);
+            this.BtbUpdate.TabIndex = 12;
+            this.BtbUpdate.Text = "Actualizar";
+            this.BtbUpdate.UseVisualStyleBackColor = true;
+            this.BtbUpdate.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // dataGridView1
             // 
@@ -207,7 +207,7 @@ namespace Denis01.Vista
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(536, 579);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtbUpdate);
             this.Controls.Add(this.TxtPass);
             this.Controls.Add(this.TxtEdad);
             this.Controls.Add(this.TxtApellido);
@@ -243,7 +243,7 @@ namespace Denis01.Vista
         private System.Windows.Forms.TextBox TxtApellido;
         private System.Windows.Forms.TextBox TxtEdad;
         private System.Windows.Forms.TextBox TxtPass;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtbUpdate;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
