@@ -30,5 +30,12 @@ namespace Denis01.Vista
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void cRUDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmUsuarios frm = new FrmUsuarios();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

@@ -42,13 +42,13 @@ namespace Denis01.Vista
             this.TxtEdad = new System.Windows.Forms.TextBox();
             this.TxtPass = new System.Windows.Forms.TextBox();
             this.BtbUpdate = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DtgUsuarios = new System.Windows.Forms.DataGridView();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgUsuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnAgregar
@@ -161,20 +161,21 @@ namespace Denis01.Vista
             this.BtbUpdate.UseVisualStyleBackColor = true;
             this.BtbUpdate.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // dataGridView1
+            // DtgUsuarios
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DtgUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DtgUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DtgUsuarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column5,
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 299);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(512, 150);
-            this.dataGridView1.TabIndex = 13;
+            this.DtgUsuarios.Location = new System.Drawing.Point(12, 299);
+            this.DtgUsuarios.Name = "DtgUsuarios";
+            this.DtgUsuarios.Size = new System.Drawing.Size(512, 150);
+            this.DtgUsuarios.TabIndex = 13;
+            this.DtgUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtgUsuarios_CellClick);
             // 
             // Column5
             // 
@@ -206,7 +207,7 @@ namespace Denis01.Vista
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(536, 579);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DtgUsuarios);
             this.Controls.Add(this.BtbUpdate);
             this.Controls.Add(this.TxtPass);
             this.Controls.Add(this.TxtEdad);
@@ -223,7 +224,7 @@ namespace Denis01.Vista
             this.Name = "FrmUsuarios";
             this.Text = "FrmUsuarios";
             this.Load += new System.EventHandler(this.FrmUsuarios_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DtgUsuarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,7 +245,7 @@ namespace Denis01.Vista
         private System.Windows.Forms.TextBox TxtEdad;
         private System.Windows.Forms.TextBox TxtPass;
         private System.Windows.Forms.Button BtbUpdate;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DtgUsuarios;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

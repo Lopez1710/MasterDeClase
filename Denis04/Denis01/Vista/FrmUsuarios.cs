@@ -18,9 +18,21 @@ namespace Denis01.Vista
             InitializeComponent();
             
         }
+
+        void Clear()
+        {
+            TxtId.Clear();
+            TxtNombre.Clear();
+            TxtApellido.Clear(); ;
+            TxtEdad.Clear();
+            TxtPass.Clear();
+        }
+
+
+
         void carga()
         {
-            dataGridView1.Rows.Clear();
+            DtgUsuarios.Rows.Clear();
             using (programacionEntities db = new programacionEntities())
             {
                 var lista = db.UserList.ToList();
@@ -29,7 +41,7 @@ namespace Denis01.Vista
                 foreach (var iteracion in lista)
                 {
 
-                    dataGridView1.Rows.Add(iteracion.id,iteracion.NombreUsuario,iteracion.Apellido,iteracion.Edad,iteracion.Pass);
+                    DtgUsuarios.Rows.Add(iteracion.id,iteracion.NombreUsuario,iteracion.Apellido,iteracion.Edad,iteracion.Pass);
 
                 }
 
@@ -58,6 +70,7 @@ namespace Denis01.Vista
                     MessageBox.Show("Error: "+ex);
                 }
                 carga();
+                Clear();
 
             }
         }
@@ -89,6 +102,7 @@ namespace Denis01.Vista
 
                 }
             carga();
+            Clear();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -108,12 +122,31 @@ namespace Denis01.Vista
 
             }
             carga();
+            Clear();
         }
 
         private void FrmUsuarios_Load(object sender, EventArgs e)
         {
 
             carga();
+        }
+
+        private void DtgUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string Id = DtgUsuarios.CurrentRow.Cells[0].Value.ToString();
+            TxtId.Text = Id;
+
+            string Nombre = DtgUsuarios.CurrentRow.Cells[1].Value.ToString();
+            TxtNombre.Text = Nombre;
+
+            string Apellido = DtgUsuarios.CurrentRow.Cells[2].Value.ToString();
+            TxtApellido.Text = Apellido;
+
+            string Edad = DtgUsuarios.CurrentRow.Cells[3].Value.ToString();
+            TxtEdad.Text = Edad;
+
+            string Pass = DtgUsuarios.CurrentRow.Cells[4].Value.ToString();
+            TxtPass.Text = Pass;
         }
     }
 }

@@ -34,6 +34,8 @@ namespace Denis01.Vista
             this.iNFORMACIONToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listaDeUsuaiosYPassToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuarioYPassToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.coneccionesBDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cRUDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,7 +43,8 @@ namespace Denis01.Vista
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.acercaDeToolStripMenuItem,
-            this.listaDeUsuaiosYPassToolStripMenuItem});
+            this.listaDeUsuaiosYPassToolStripMenuItem,
+            this.coneccionesBDToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(536, 24);
@@ -59,7 +62,7 @@ namespace Denis01.Vista
             // iNFORMACIONToolStripMenuItem
             // 
             this.iNFORMACIONToolStripMenuItem.Name = "iNFORMACIONToolStripMenuItem";
-            this.iNFORMACIONToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.iNFORMACIONToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.iNFORMACIONToolStripMenuItem.Text = "INFORMACION";
             this.iNFORMACIONToolStripMenuItem.Click += new System.EventHandler(this.iNFORMACIONToolStripMenuItem_Click);
             // 
@@ -74,9 +77,24 @@ namespace Denis01.Vista
             // usuarioYPassToolStripMenuItem
             // 
             this.usuarioYPassToolStripMenuItem.Name = "usuarioYPassToolStripMenuItem";
-            this.usuarioYPassToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuarioYPassToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.usuarioYPassToolStripMenuItem.Text = "USUARIO Y PASS";
             this.usuarioYPassToolStripMenuItem.Click += new System.EventHandler(this.usuarioYPassToolStripMenuItem_Click);
+            // 
+            // coneccionesBDToolStripMenuItem
+            // 
+            this.coneccionesBDToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cRUDToolStripMenuItem});
+            this.coneccionesBDToolStripMenuItem.Name = "coneccionesBDToolStripMenuItem";
+            this.coneccionesBDToolStripMenuItem.Size = new System.Drawing.Size(105, 20);
+            this.coneccionesBDToolStripMenuItem.Text = "Conecciones BD";
+            // 
+            // cRUDToolStripMenuItem
+            // 
+            this.cRUDToolStripMenuItem.Name = "cRUDToolStripMenuItem";
+            this.cRUDToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cRUDToolStripMenuItem.Text = "CRUD";
+            this.cRUDToolStripMenuItem.Click += new System.EventHandler(this.cRUDToolStripMenuItem_Click);
             // 
             // FrmMenu
             // 
@@ -103,5 +121,7 @@ namespace Denis01.Vista
         private System.Windows.Forms.ToolStripMenuItem iNFORMACIONToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listaDeUsuaiosYPassToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuarioYPassToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem coneccionesBDToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cRUDToolStripMenuItem;
     }
 }

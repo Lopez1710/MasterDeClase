@@ -82,6 +82,12 @@
     <Compile Include="Vista\FrmAcercaDe.Designer.cs">
       <DependentUpon>FrmAcercaDe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\FrmFoco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FrmFoco.Designer.cs">
+      <DependentUpon>FrmFoco.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\FrmListaDeUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </Compile>
     <EmbeddedResource Include="Vista\FrmAcercaDe.resx">
       <DependentUpon>FrmAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FrmFoco.resx">
+      <DependentUpon>FrmFoco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\FrmListaDeUsuarios.resx">
       <DependentUpon>FrmListaDeUsuarios.cs</DependentUpon>
