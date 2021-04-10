@@ -26,5 +26,6 @@ namespace Denis01.MODEL
         }
     
         public virtual DbSet<UserList> UserList { get; set; }
+        public virtual DbSet<typeOfUser> typeOfUser { get; set; }
     }
 }

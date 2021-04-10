@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\ClsDJoin.cs" />
     <Compile Include="DAO\ClsDUserList.cs" />
     <Compile Include="DAO\ClsListaUsuarios.cs" />
     <Compile Include="Dominio\Login.cs" />
@@ -73,6 +74,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="MODEL\typeOfUser.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="MODEL\UserList.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -88,6 +92,12 @@
     </Compile>
     <Compile Include="Vista\FrmFoco.Designer.cs">
       <DependentUpon>FrmFoco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FrmJoin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FrmJoin.Designer.cs">
+      <DependentUpon>FrmJoin.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\FrmListaDeUsuarios.cs">
       <SubType>Form</SubType>
@@ -120,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\FrmFoco.resx">
       <DependentUpon>FrmFoco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FrmJoin.resx">
+      <DependentUpon>FrmJoin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\FrmListaDeUsuarios.resx">
       <DependentUpon>FrmListaDeUsuarios.cs</DependentUpon>

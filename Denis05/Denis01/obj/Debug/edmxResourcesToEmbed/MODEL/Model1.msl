@@ -4,11 +4,20 @@
     <EntitySetMapping Name="UserList">
       <EntityTypeMapping TypeName="programacionModel.UserList">
         <MappingFragment StoreEntitySet="UserList">
+          <ScalarProperty Name="IdTypeOUser" ColumnName="IdTypeOUser" />
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
           <ScalarProperty Name="Apellido" ColumnName="Apellido" />
           <ScalarProperty Name="Edad" ColumnName="Edad" />
           <ScalarProperty Name="Pass" ColumnName="Pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="typeOfUser">
+      <EntityTypeMapping TypeName="programacionModel.typeOfUser">
+        <MappingFragment StoreEntitySet="typeOfUser">
+          <ScalarProperty Name="TypeOfUserName" ColumnName="TypeOfUserName" />
+          <ScalarProperty Name="IdTypeOfUser" ColumnName="IdTypeOfUser" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

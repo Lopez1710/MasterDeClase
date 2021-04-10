@@ -12,15 +12,18 @@ namespace Denis01.MODEL
     using System;
     using System.Collections.Generic;
     
-    public partial class UserList
+    public partial class typeOfUser
     {
-        public int id { get; set; }
-        public string NombreUsuario { get; set; }
-        public string Apellido { get; set; }
-        public Nullable<int> Edad { get; set; }
-        public string Pass { get; set; }
-        public Nullable<int> IdTypeOUser { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public typeOfUser()
+        {
+            this.UserList = new HashSet<UserList>();
+        }
     
-        public virtual typeOfUser typeOfUser { get; set; }
+        public int IdTypeOfUser { get; set; }
+        public string TypeOfUserName { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<UserList> UserList { get; set; }
     }
 }
